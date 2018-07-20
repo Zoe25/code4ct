@@ -18,7 +18,7 @@ header input + label {
     margin-top: -1px;
     left: 0;
     display: block;
-    background: #1dc1c1;
+    background: #e38f84;
     transition: .5s; }
   header input + label span:first-child {
     top: 3px; }
@@ -101,7 +101,7 @@ section .innerbox {
     font-size: 14px;
     letter-spacing: 2px;
     line-height: 1.3em; }
-section #anythng > #btn1 {
+section #anything > #btn1 {
   background-color: transparent;
   margin-left: 110px;
   border: 3px solid white;
@@ -109,14 +109,14 @@ section #anythng > #btn1 {
   padding: 5px 8px 5px 8px;
   width: 80px;
   color: white; }
-  section #anythng > #btn1 #btn1:hover {
+  section #anything > #btn1 #btn1:hover {
     padding-left: 1500px; }
 section #btn2 {
-  border: 3px solid black;
+  border: 3px solid white;
   border-radius: 4px;
-  padding: 5px 8px 5px 8px;
+  padding: 5px 8px 5px 10px;
   width: 80px;
-  color: black;
+  color: white;
   background-color: transparent; }
 section div.slider {
   padding-bottom: 20px;
@@ -147,7 +147,7 @@ section div.slider {
     transition: padding-top 1s ease-in-out;
     background-color: white;
     box-shadow: 1px 1px  black;
-    dsplay: inline-block;
+    display: inline-block;
     margin-left: 160px;
     margin-top: -12px; }
   section div.slider #divOne:hover {
@@ -216,10 +216,10 @@ section div.slider {
 #section3 .team {
   text-align: center;
   font-family: "Open Sans" ,Arial,sans-serif; }
-  #section3 .team > h2 {
+  #section3 .team #emma > h2, #section3 .team #andrea > h2, #section3 .team #tegan > h2, #section3 .team #tracy > h2 {
     color: #3e3e3e;
     font-size: 31px; }
-  #section3 .team > p {
+  #section3 .team #emma > p, #section3 .team #andrea > p, #section3 .team #tegan > p, #section3 .team #tracy > p {
     border: 1px solid #666;
     padding: 2px 12px 2px 12px;
     color: #666;
@@ -258,7 +258,7 @@ footer {
     color: white; }
 
 header {
-  height: 100px; }
+  height: 10px; }
 
 #catergory1 {
   padding-top: 50px;
@@ -487,5 +487,206 @@ section .course-1 code-info {
   .slider-press .slider-number {
     background-color: #e38f84;
     padding: 0 5px 0 5px; }
+
+@media only screen and (min-width: 746px) {
+  body #section1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto; }
+    body #section1 #anything {
+      grid-column: 1/6;
+      grid-row: auto; }
+      body #section1 #anything .innerbox {
+        width: 1100px;
+        height: 50px; }
+        body #section1 #anything .innerbox p {
+          font-size: 20px; }
+  body .who-we-are {
+    grid-column: 1/6;
+    grid-row: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto; }
+    body .who-we-are h1 {
+      grid-column: 1/3;
+      grid-row: auto; }
+    body .who-we-are p {
+      grid-column: 1/3;
+      grid-row: auto; }
+    body .who-we-are #btn3 {
+      grid-column: 1/3;
+      grid-row: auto;
+      height: 30px;
+      margin-top: 80px;
+      margin-left: 284px; }
+    body .who-we-are .num1, body .who-we-are .num3 {
+      grid-column: 3/4; }
+    body .who-we-are .num2, body .who-we-are .num4 {
+      grid-column: 4/5; }
+    body .who-we-are .num1, body .who-we-are .num2 {
+      grid-row: 2/3; }
+    body .who-we-are .num3, body .who-we-are .num4 {
+      grid-row: 3/4; }
+    body .who-we-are img {
+      width: 300px;
+      height: 210px; }
+  body #section2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto; }
+    body #section2 .tool, body #section2 .loud, body #section2 .computer, body #section2 .doc {
+      width: 100px;
+      height: 100px;
+      padding-top: 10px; }
+    body #section2 p {
+      padding-left: 5px;
+      padding-right: 5px; }
+  body #section3 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto; }
+    body #section3 .portfolio {
+      grid-column: 1/9;
+      grid-row: auto; }
+    body #section3 .team {
+      grid-column-start: 1;
+      grid-column-end: 9;
+      grid-row: auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto; }
+      body #section3 .team h1, body #section3 .team p {
+        grid-column: 1/5; }
+      body #section3 .team #emma {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 59px; }
+        body #section3 .team #emma img {
+          grid-column: 1/2;
+          grid-row: 1/7;
+          width: 90%; }
+        body #section3 .team #emma h2 {
+          grid-column: 2/3;
+          grid-row: 1/2; }
+        body #section3 .team #emma h3 {
+          grid-column: 2/3;
+          grid-row: 2/3; }
+        body #section3 .team #emma p {
+          border: 0cm;
+          grid-column: 2/3;
+          grid-row: 3/7; }
+      body #section3 .team #andrea {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 59px; }
+        body #section3 .team #andrea img {
+          grid-column: 1/2;
+          grid-row: 1/7;
+          width: 90%; }
+        body #section3 .team #andrea h2 {
+          grid-column: 2/3;
+          grid-row: 1/2; }
+        body #section3 .team #andrea h3 {
+          grid-column: 2/3;
+          grid-row: 2/3; }
+        body #section3 .team #andrea p {
+          border: 0cm;
+          grid-column: 2/3;
+          grid-row: 3/7; }
+      body #section3 .team #tegan {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 59px; }
+        body #section3 .team #tegan img {
+          grid-column: 1/2;
+          grid-row: 1/7;
+          width: 90%; }
+        body #section3 .team #tegan h2 {
+          grid-column: 2/3;
+          grid-row: 1/2; }
+        body #section3 .team #tegan h3 {
+          grid-column: 2/3;
+          grid-row: 2/3; }
+        body #section3 .team #tegan p {
+          border: 0cm;
+          grid-column: 2/3;
+          grid-row: 3/7; }
+      body #section3 .team #tracy {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 59px; }
+        body #section3 .team #tracy img {
+          grid-column: 1/2;
+          grid-row: 1/7;
+          width: 90%; }
+        body #section3 .team #tracy h2 {
+          grid-column: 2/3;
+          grid-row: 1/2; }
+        body #section3 .team #tracy h3 {
+          grid-column: 2/3;
+          grid-row: 2/3; }
+        body #section3 .team #tracy p {
+          border: 0cm;
+          grid-column: 2/3;
+          grid-row: 3/7; }
+  body #number {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px; }
+    body #number .countup .girl-count, body #number .countup .girls {
+      grid-column-start: 1;
+      grid-column-end: 2; }
+    body #number .countup .code-count, body #number .countup .coding {
+      grid-column-start: 2;
+      grid-column-end: 3; }
+    body #number .countup .coffee-count, body #number .countup .coffee {
+      grid-column-start: 3;
+      grid-column-end: 4; }
+    body #number .countup .project-count, body #number .countup .projects {
+      grid-column-start: 4;
+      grid-column-end: 5; }
+  body #slideshow {
+    height: 200px;
+    width: 1350px;
+    margin: 0 auto; }
+  body #section5 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto; }
+    body #section5 .contact-info, body #section5 .contact {
+      text-align: left;
+      grid-column-start: 1;
+      grid-column-end: 2; }
+    body #section5 .company {
+      grid-column-start: 2;
+      grid-column-end: 3; }
+      body #section5 .company li {
+        padding-bottom: 10px; }
+  body #catergory1 .info1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 100px; }
+    body #catergory1 .info1 h1, body #catergory1 .info1 p {
+      grid-column-start: 1;
+      grid-column-end: 3; }
+    body #catergory1 .info1 h1 {
+      grid-row-start: 2;
+      grid-row-end: 3; }
+    body #catergory1 .info1 img {
+      padding-right: 50px;
+      padding-top: 100px;
+      width: 500px;
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 7; } }
 
 /*# sourceMappingURL=input.css.map */
